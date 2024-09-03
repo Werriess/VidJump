@@ -14,3 +14,5 @@
 
    ```bash
    git clone https://github.com/yourusername/Jump-to-Timestamp.git
+   cd Jump-to-Timestamp
+
