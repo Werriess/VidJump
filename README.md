@@ -14,5 +14,30 @@
 
    ```bash
    git clone https://github.com/yourusername/Jump-to-Timestamp.git
+
+2. **Clone to repository:**
+
+   ```bash
    cd Jump-to-Timestamp
+
+3. **Install required dependencies:**
+
+   ```bash
+   pip install youtube-transcript-api tkhtmlview
+
+## Usage
+
+1. **Run application:**
+
+   ```bash
+      python main.py
+
+2. **Enter a YouTube video URL:**
+- Paste the URL of the YouTube video into the "Paste in your YouTube link?" field.
+
+3. **Enter a search term: **
+- Type the word or phrase you want to search for in the "What word are you searching for?" field.
+
+4. **Click "Fetch":**
+- Click the "Fetch button to retrieve the timestamps and see the results displayed below."
 
