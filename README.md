@@ -39,5 +39,5 @@
    - Type the word or phrase you want to search for in the "What word are you searching for?" field.
 
 4. **Click "Fetch":**
-   - Click the "Fetch button to retrieve the timestamps and see the results displayed below."
+   - Click the "Fetch" button to retrieve the timestamps and see the results displayed below.
 
