@@ -1,6 +1,6 @@
-# Jump to Timestamp
+# VidJump
 
-**Jump to Timestamp** is a Tkinter-based application that allows users to search for specific words or phrases in YouTube video transcripts and jump directly to the relevant timestamps. Using the `youtube_transcript_api`, the app retrieves transcript data from YouTube videos and provides clickable links to the exact moments where the searched term appears.
+**VidJump** is a Tkinter-based application that allows users to search for specific words or phrases in YouTube video transcripts and jump directly to the relevant timestamps. Using the `youtube_transcript_api`, the app retrieves transcript data from YouTube videos and provides clickable links to the exact moments where the searched term appears.
 
 ## Features
 
@@ -13,7 +13,7 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/Jump-to-Timestamp.git
+   git clone https://github.com/Werriess/VidJump.git
 
 2. **Clone to repository:**
 
