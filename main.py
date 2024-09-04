@@ -1,25 +1,25 @@
 from tkinter import *
 from youtube_transcript_api import YouTubeTranscriptApi
 from tkhtmlview import HTMLLabel
+import customtkinter
 
-root = Tk()
-root.title("Welcome Jump to Timestamp")
+customtkinter.set_appearance_mode("dark")
+
+
+root = customtkinter.CTk()
+
+root.iconbitmap('./icons/yt_logo.ico')
+root.title("VidJump")
 root.geometry('700x500')
 
-lbl = Label(root, text="Paste in your YouTube link?")
-lbl.grid(column=0, row=0)
+txtOne = customtkinter.CTkEntry(master = root, width=300, placeholder_text="Paste in your the YouTube-link")
+txtOne.grid(column=0, row=0, pady = "10")
 
-txtOne = Entry(root, width=30)
-txtOne.grid(column=1, row=0)
+txtTwo = customtkinter.CTkEntry(master = root, width=300, placeholder_text="What word are you searching for?")
+txtTwo.grid(column=0, row=1)
 
-lbl = Label(root, text="What word are you searching for?")
-lbl.grid(column=0, row=1)
-
-txtTwo = Entry(root, width=30)
-txtTwo.grid(column=1, row=1)
-
-frm = Frame(root)
-frm.grid(column=0, row=4, columnspan=3, pady=10)
+frm = customtkinter.CTkFrame(master=root, width=200, height=200)
+frm.grid(column=0, row=4, columnspan=3, pady=10, padx=20)
 
 frame_lbl = HTMLLabel(frm, html="")
 frame_lbl.pack(fill=BOTH, expand=True)
@@ -56,7 +56,7 @@ def get_timestamped_video(searchText, searchID):
                 )
         
         if not found:
-            result = [f'<p style="font-family: Arial, sans-serif; color: #333;">"{searchText}" not found in the transcript.</p>']
+            result = [f'<p style="font-family: Arial, sans-serif; color: #333; font-size: 10px">"{searchText}" not found in the transcript.</p>']
         
         return "<br>".join(result)
     
@@ -64,7 +64,7 @@ def get_timestamped_video(searchText, searchID):
         return f'<p style="font-family: Arial, sans-serif; color: #d9534f;">An error occurred: {e}</p>'
 
 
-btn = Button(root, text="Fetch", fg="black", command=on_clicked)
-btn.grid(column=3, row=1)
+btn = customtkinter.CTkButton(master = root, text="Fetch", command=on_clicked, fg_color="red", hover_color="#cc0000")
+btn.grid(column=1, row=1)
 
 root.mainloop()
