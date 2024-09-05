@@ -8,7 +8,7 @@ customtkinter.set_appearance_mode("dark")
 
 root = customtkinter.CTk()
 
-root.iconbitmap('./icons/yt_logo.ico')
+root.iconbitmap('./assets/yt_logo.ico')
 root.title("VidJump")
 root.geometry('700x500')
 

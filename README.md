@@ -41,3 +41,6 @@
 4. **Click "Fetch":**
    - Click the "Fetch" button to retrieve the timestamps and see the results displayed below.
 
+![VidJump Interface](./assets/YT_photo.png)
+
+
