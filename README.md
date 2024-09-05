@@ -18,7 +18,7 @@
 2. **Clone to repository:**
 
    ```bash
-   cd Jump-to-Timestamp
+   cd VidJump
 
 3. **Install required dependencies:**
 
